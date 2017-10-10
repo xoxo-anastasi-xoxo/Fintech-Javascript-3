@@ -78,7 +78,9 @@ function getUnique(arr) {
       result.push(el);
     }
   }
-  return result.sort();
+  return result.sort(function(a, b) {
+    return a - b;
+  });
 }
 
 /**
@@ -107,7 +109,9 @@ function getIntersection(first, second) {
       curentNumber++;
     }
   }
-  return result.sort();
+  return result.sort(function(a, b) {
+    return a - b;
+  });
 }
 
 /* ============================================= */
