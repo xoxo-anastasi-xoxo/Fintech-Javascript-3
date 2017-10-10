@@ -36,15 +36,7 @@ function customBind(func, context, ...args) {
  * sum :: void -> Number
  */
 function sum(x) {
-  if (this.summ === undefined) {
-    this.summ = 0;
-  }
-  if (x === undefined) {
-    return this.summ;
-  }
-  this.summ += x;
-  return sum.bind(
-    { summ: this.summ });
+  return 0;
 }
 
 /*= ============================================ */
@@ -115,8 +107,7 @@ function getIntersection(first, second) {
       curentNumber++;
     }
   }
-  result = result.sort();
-  return result;
+  return result.sort();
 }
 
 /* ============================================= */
