@@ -24,10 +24,8 @@ function promiseAll(promises) {
           // Если написать только так,
           // нарушится условие порядка возвращаемых значений
           help.push(x);
-          if (resolveValues.length === promises.length) {
-            if (resolveValues.length === help.length) {
-              resolve(resolveValues);
-            }
+          if (resolveValues.length === help.length) {
+            resolve(resolveValues);
           }
         }, x => {
           reject(x);
