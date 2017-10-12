@@ -51,7 +51,7 @@ describe('Lesson 2', () => {
       expect(lastParams).to.eql(['hello', 'work', 777]);
     });
   });
-  /*
+
   describe('sum', () => {
     it('should compute sum', () => {
       expect(sum(1)(2)(4)(5)()).to.be(12);
@@ -59,7 +59,7 @@ describe('Lesson 2', () => {
       expect(sum()).to.be(0);
     });
   });
-  */
+
   describe('anagram', () => {
     it('should check are words anagrams of each other', () => {
       expect(anagram('просветитель', 'терпеливость')).to.be.ok();

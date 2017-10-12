@@ -3,6 +3,7 @@ const expect = require('expect.js');
 const rejectOnTimeout = require('./task.js');
 const { delayPromise } = require('../utils.js');
 
+
 describe('Lesson 3 - task 2', () => {
   it('should work as initial resolved promise', done => {
     rejectOnTimeout(Promise.resolve(10), 1000).then(value => {
@@ -41,3 +42,5 @@ describe('Lesson 3 - task 2', () => {
     );
   });
 });
+
+rejectOnTimeout(Promise.resolve(10), 1000);

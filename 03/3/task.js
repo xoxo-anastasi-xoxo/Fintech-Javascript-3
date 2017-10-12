@@ -7,7 +7,33 @@
  * @return {Promise}
  */
 function promiseAll(promises) {
-  return Promise.resolve(null);
+  return new Promise((resolve, reject) => {
+    let resolveValues = [];
+    // Здравствуйте, костыль. Буду очень благодарна, если подскажешь,
+    // как делать нормально:)
+    // Вводить каунтер - не проходит по времени
+    let help = [];
+
+    for (let i = 0; i < promises.length; i++) {
+      promises[i]
+        .then(x => {
+          // Если написать только так,
+          // выйдет при первом промисе, завершившемся
+          // после обхода этого цикла
+          resolveValues[i] = x;
+          // Если написать только так,
+          // нарушится условие порядка возвращаемых значений
+          help.push(x);
+          if (resolveValues.length === promises.length) {
+            if (resolveValues.length === help.length) {
+              resolve(resolveValues);
+            }
+          }
+        }, x => {
+          reject(x);
+        });
+    }
+  });
 }
 
 module.exports = promiseAll;

@@ -21,7 +21,7 @@ function timer(logger = console.log) {
  * @return {Function} функция с нужным контекстом
  */
 function customBind(func, context, ...args) {
-  return function(...moreArgs) {
+  return function (...moreArgs) {
     return func.apply(context, [].slice.call(args.concat(moreArgs)));
   };
 }
@@ -36,7 +36,19 @@ function customBind(func, context, ...args) {
  * sum :: void -> Number
  */
 function sum(x) {
-  return 0;
+  let s = 0;
+
+  if (this.summ !== undefined) {
+    s = this.summ;
+  }
+
+  if (x === undefined) {
+    return s;
+  }
+  s += x;
+  return sum.bind(
+    { summ: s });
+
 }
 
 /*= ============================================ */
@@ -78,7 +90,7 @@ function getUnique(arr) {
       result.push(el);
     }
   }
-  return result.sort(function(a, b) {
+  return result.sort(function (a, b) {
     return a - b;
   });
 }
@@ -109,7 +121,7 @@ function getIntersection(first, second) {
       curentNumber++;
     }
   }
-  return result.sort(function(a, b) {
+  return result.sort(function (a, b) {
     return a - b;
   });
 }
