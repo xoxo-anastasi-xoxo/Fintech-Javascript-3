@@ -6,15 +6,16 @@
   "scripts": {
     "test": "npm run lint-html && npm run lint-css",
     "lint": "eslint ./04/*/task.js",
-    "lint-html": "node html-validator.js ./04//*.html",
-    "lint-css": "stylelint ./04//*.css",
-    "unit-tests": "mocha —reporter=spec ./04/*/test.js"
+    "lint-html": "node html-validator.js ./04/**/*.html",
+    "lint-css": "stylelint ./04/**/*.css",
+    "unit-tests": "mocha --reporter=spec ./04/*/test.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "eslint": "^4.6.1",
     "eslint-config-airbnb": "^15.1.0",
+    "eslint-config-airbnb-deps": "^15.1.0",
     "eslint-plugin-import": "^2.7.0",
     "eslint-plugin-jsx-a11y": "^6.0.2",
     "eslint-plugin-react": "^7.3.0",
@@ -22,9 +23,8 @@
     "mocha": "^3.5.0"
   },
   "devDependencies": {
-    "babel-eslint": "^8.0.1",
-    "eslint-plugin-jsx-a11y": "^5.1.1",
     "html-validator": "^2.2.3",
+    "babel-eslint": "^8.0.1",
     "stylelint": "^8.2.0",
     "stylelint-config-standard": "^17.0.0"
   }
