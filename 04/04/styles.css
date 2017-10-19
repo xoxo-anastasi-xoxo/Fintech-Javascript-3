@@ -1,28 +1,25 @@
 @import "http://fonts.fontstorage.com/import/roboto.css";
 @import "http://fonts.fontstorage.com/import/robotocondensed.css";
 
-#wrapper {
-    width: 100vw; /* Ширина слоя в пикселах */
-    margin: 0 auto; /* Отступ слева и справа */
-}
 
-#innerwrapper {
-    width: 960px; /* Ширина слоя в пикселах */
-}
-body{
-    background-color:#FFFAFA;
+
+body {
+    background-color: #FFFAFA;
     font-family: 'Roboto';
     color: rebeccapurple;
 }
-h1{
+
+h1 {
     text-align: center;
-     font-size: 3em;
-     font-family: 'Roboto Condensed';
- }
-h2{
+    font-size: 3em;
+    font-family: 'Roboto Condensed';
+}
+
+h2 {
     font-size: 2em;
 }
-p{
+
+p {
     width: 960px;
     margin-bottom: 1%;
     margin-top: 1%;
@@ -33,19 +30,24 @@ p{
     margin-left: 5%;
     font-size: 1.5em;
 }
+
 .blocks {
     margin-top: 2%;
     margin-bottom: 2%;
 }
+
 ol {
     list-style-type: none;
 }
+
 a {
     margin-bottom: 2%;
 }
+
 .first {
     font-style: oblique;
 }
+
 .second {
     background: #e9edf5; /* фон блока */
     -moz-border-radius: 10px; /* закругление для старых Mozilla Firefox */
@@ -53,6 +55,7 @@ a {
     border-radius: 10px; /* закругление углов для всех, кто понимает */
     padding: 5px; /* внутренние отступы */
 }
+
 .third {
     background: #e9edf5; /* фон блока */
     border: #1fbcff 1px solid;
@@ -61,6 +64,13 @@ a {
     border-radius: 10px; /* закругление углов для всех, кто понимает */
     padding: 5px; /* внутренние отступы */
 }
+
 iframe {
     border: none;
+}
+#wrapper {
+    width: 960px;/* Ширина слоя в пикселах */
+    margin-left: 50%;
+    transform: translateX(-50%);
+
 }
