@@ -1,43 +1,46 @@
 @import "http://fonts.fontstorage.com/import/beermoney.css";
 
-body{
-    margin-top: 3%;
-    margin-left: 10%;
-    margin-right: 10%;
-    background-color:#FFFAFA;
-    font-family: 'Beer money';
-    color: rebeccapurple;
+body {
+  margin-top: 3%;
+  margin-left: 10%;
+  margin-right: 10%;
+  background-color: #FFFAFA;
+  font-family: 'Beer money';
+  color: rebeccapurple;
 }
-h1{
-    font-size: 3em;
-    text-align:  center;
+
+h1 {
+  font-size: 3em;
+  text-align: center;
 }
 
 img {
-    height: 10em;
-    margin-top: 2%;
-    margin-bottom: 2%;
+  height: 10em;
+  margin-top: 2%;
+  margin-bottom: 2%;
 }
 
-p{
-    font-size: 1.1em;
-    text-indent: 25px
+p {
+  font-size: 1.1em;
+  text-indent: 25px
 }
 
-ul{
-    font-size: 1.1em;
-    margin-left: 50px;
-    list-style-type: none;
-    margin-top: 2%;
-    margin-bottom: 2%;
+ul {
+  font-size: 1.1em;
+  margin-left: 50px;
+  list-style-type: none;
+  margin-top: 2%;
+  margin-bottom: 2%;
 }
+
 li:before {
-    content: "~ ";
+  content: "~ ";
 }
 
-#aboutVK{
-    margin-bottom: 2%;
+#aboutVK {
+  margin-bottom: 2%;
 }
-div{
-    text-align: center;
+
+div {
+  text-align: center;
 }

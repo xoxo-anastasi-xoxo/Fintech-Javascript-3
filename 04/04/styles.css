@@ -1,76 +1,75 @@
 @import "http://fonts.fontstorage.com/import/roboto.css";
 @import "http://fonts.fontstorage.com/import/robotocondensed.css";
 
-
-
 body {
-    background-color: #FFFAFA;
-    font-family: 'Roboto';
-    color: rebeccapurple;
+  background-color: #fffafa;
+  font-family: 'Roboto';
+  color: rebeccapurple;
 }
 
 h1 {
-    text-align: center;
-    font-size: 3em;
-    font-family: 'Roboto Condensed';
+  text-align: center;
+  font-size: 3em;
+  font-family: 'Roboto Condensed';
 }
 
 h2 {
-    font-size: 2em;
+  font-size: 2em;
 }
 
 p {
-    width: 960px;
-    margin-bottom: 1%;
-    margin-top: 1%;
-    font-size: 1.1em;
+  width: 960px;
+  margin-bottom: 1%;
+  margin-top: 1%;
+  font-size: 1.1em;
 }
 
 #ankors {
-    margin-left: 5%;
-    font-size: 1.5em;
+  margin-left: 5%;
+  font-size: 1.5em;
 }
 
 .blocks {
-    margin-top: 2%;
-    margin-bottom: 2%;
+  margin-top: 2%;
+  margin-bottom: 2%;
 }
 
 ol {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 a {
-    margin-bottom: 2%;
+  margin-bottom: 2%;
 }
 
 .first {
-    font-style: oblique;
+  font-style: oblique;
 }
 
 .second {
-    background: #e9edf5; /* фон блока */
-    -moz-border-radius: 10px; /* закругление для старых Mozilla Firefox */
-    -webkit-border-radius: 10px; /* закругление для старых Chrome и Safari */
-    border-radius: 10px; /* закругление углов для всех, кто понимает */
-    padding: 5px; /* внутренние отступы */
+  background: #e9edf5; /* фон блока */
+  -moz-border-radius: 10px; /* закругление для старых Mozilla Firefox */
+  -webkit-border-radius: 10px; /* закругление для старых Chrome и Safari */
+  border-radius: 10px; /* закругление углов для всех, кто понимает */
+  padding: 5px; /* внутренние отступы */
 }
 
 .third {
-    background: #e9edf5; /* фон блока */
-    border: #1fbcff 1px solid;
-    -moz-border-radius: 10px; /* закругление для старых Mozilla Firefox */
-    -webkit-border-radius: 10px; /* закругление для старых Chrome и Safari */
-    border-radius: 10px; /* закругление углов для всех, кто понимает */
-    padding: 5px; /* внутренние отступы */
+  background: #e9edf5; /* фон блока */
+  border: #1fbcff 1px solid;
+  -moz-border-radius: 10px; /* закругление для старых Mozilla Firefox */
+  -webkit-border-radius: 10px; /* закругление для старых Chrome и Safari */
+  border-radius: 10px; /* закругление углов для всех, кто понимает */
+  padding: 5px; /* внутренние отступы */
 }
 
 iframe {
-    border: none;
+  border: none;
 }
+
 #wrapper {
-    width: 960px;/* Ширина слоя в пикселах */
-    margin-left: 50%;
-    transform: translateX(-50%);
+  width: 960px; /* Ширина слоя в пикселах */
+  margin-left: 50%;
+  transform: translateX(-50%);
 
 }
