@@ -8,6 +8,7 @@
     "lint": "eslint ./04/*/task.js",
     "lint-html": "node html-validator.js ./04/**/*.html",
     "lint-css": "stylelint ./04/**/*.css",
+    "lint-fix": "stylelint ./04/**/*.css --fix",
     "unit-tests": "mocha --reporter=spec ./04/*/test.js"
   },
   "author": "",

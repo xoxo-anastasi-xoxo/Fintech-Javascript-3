@@ -4,7 +4,7 @@ body {
   margin-top: 3%;
   margin-left: 10%;
   margin-right: 10%;
-  background-color: #FFFAFA;
+  background-color: #fffafa;
   font-family: 'Caviar Dreams';
   color: rebeccapurple;
 }
@@ -23,7 +23,7 @@ h2 {
 
 p {
   font-size: 1.1em;
-  text-indent: 25px
+  text-indent: 25px;
 }
 
 thead {
@@ -49,15 +49,14 @@ thead th {
   border-bottom: 1px solid rebeccapurple; /* Параметры рамки */
 }
 
-td, th {
+td,
+th {
   vertical-align: middle;
-
 }
 
 th {
   width: 20%;
   background: #b0e0e6;
-
 }
 
 .first {
@@ -87,7 +86,7 @@ div {
 .name {
   overflow: hidden;
   white-space: nowrap;
-  text-overflow: ellipsis
+  text-overflow: ellipsis;
 }
 
 .origin {

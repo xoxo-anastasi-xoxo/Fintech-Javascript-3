@@ -4,7 +4,7 @@ body {
   margin-top: 3%;
   margin-left: 10%;
   margin-right: 10%;
-  background-color: #FFFAFA;
+  background-color: #fffafa;
   font-family: 'Beer money';
   color: rebeccapurple;
 }
@@ -22,7 +22,7 @@ img {
 
 p {
   font-size: 1.1em;
-  text-indent: 25px
+  text-indent: 25px;
 }
 
 ul {
@@ -33,7 +33,7 @@ ul {
   margin-bottom: 2%;
 }
 
-li:before {
+li::before {
   content: "~ ";
 }
 
