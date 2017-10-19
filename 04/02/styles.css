@@ -1,0 +1,124 @@
+@import "http://fonts.fontstorage.com/import/caviar.css";
+
+body {
+  margin-top: 3%;
+  margin-left: 10%;
+  margin-right: 10%;
+  background-color: #fffafa;
+  font-family: 'Caviar Dreams';
+  color: rebeccapurple;
+}
+
+h1 {
+  font-size: 3em;
+  text-align: center;
+}
+
+h2 {
+  margin-top: 3%;
+  margin-bottom: 3%;
+  font-size: 2em;
+  text-align: center;
+}
+
+p {
+  font-size: 1.1em;
+  text-indent: 25px;
+}
+
+thead {
+  display: table-header-group;
+  vertical-align: middle;
+  border-color: rebeccapurple;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse; /* Убираем двойные линии между ячейками */
+  border: none;
+  table-layout: fixed;
+  text-align: center;
+}
+
+caption {
+  margin-bottom: 1%;
+  font-size: 2em;
+}
+
+thead th {
+  border-bottom: 1px solid rebeccapurple; /* Параметры рамки */
+}
+
+td,
+th {
+  vertical-align: middle;
+}
+
+th {
+  width: 20%;
+  background: #b0e0e6;
+}
+
+.first {
+  background: lightpink;
+}
+
+.second {
+  background-color: peachpuff;
+}
+
+tr:hover {
+  background-color: lightgreen;
+}
+
+#tab2 {
+  border-collapse: separate;
+  border-spacing: 8px 8px;
+  width: 400px;
+}
+
+div {
+  overflow: hidden;
+  text-indent: 10px;
+  width: 90%;
+}
+
+.name {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.origin {
+  font-size: 0.8em;
+  overflow: auto;
+}
+
+.pfc {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.y1 {
+  background: #3fbe80;
+}
+
+.y2 {
+  background: #34cb98;
+}
+
+.y3 {
+  background: #26d8ba;
+}
+
+.y4 {
+  background: #19e6e6;
+}
+
+.y5 {
+  background: #0cccf3;
+}
+
+.y6 {
+  background: #02aaff;
+}

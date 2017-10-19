@@ -1,0 +1,55 @@
+@import "http://fonts.fontstorage.com/import/dited.css";
+
+body {
+  margin-top: 3%;
+  margin-left: 10%;
+  margin-right: 10%;
+  background-color: black;
+  font-family: 'Dited';
+  color: deeppink;
+  font-size: 1.5em;
+}
+
+h1 {
+  font-size: 3em;
+  margin-bottom: 3%;
+}
+
+img {
+  height: 10em;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+p {
+  text-indent: 25px;
+}
+
+ul {
+  margin-left: 50px;
+  list-style-type: none;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+ul > li::before {
+  color: blue;
+  content: "•";
+  padding-right: 7px;
+}
+
+ol {
+  counter-reset: myCounter;
+}
+
+ol > li {
+  margin-left: 5%;
+  list-style: none;
+}
+
+ol > li::before {
+  counter-increment: myCounter;
+  content: counter(myCounter);
+  color: yellow;
+  padding-right: 7px;
+}
