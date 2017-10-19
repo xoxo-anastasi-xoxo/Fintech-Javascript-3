@@ -15,6 +15,7 @@ body{
     color: rebeccapurple;
 }
 h1{
+    text-align: center;
      font-size: 3em;
      font-family: 'Roboto Condensed';
  }
@@ -59,4 +60,7 @@ a {
     -webkit-border-radius: 10px; /* закругление для старых Chrome и Safari */
     border-radius: 10px; /* закругление углов для всех, кто понимает */
     padding: 5px; /* внутренние отступы */
+}
+iframe {
+    border: none;
 }

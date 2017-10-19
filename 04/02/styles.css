@@ -11,12 +11,14 @@ body {
 
 h1 {
     font-size: 3em;
+    text-align:  center;
 }
 
 h2 {
     margin-top: 3%;
     margin-bottom: 3%;
     font-size: 2em;
+    text-align:  center;
 }
 
 p {
@@ -35,6 +37,7 @@ table {
     border-collapse: collapse; /* Убираем двойные линии между ячейками */
     border: none;
     table-layout: fixed;
+    text-align:  center;
 }
 
 caption {

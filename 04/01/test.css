@@ -10,6 +10,7 @@ body{
 }
 h1{
     font-size: 3em;
+    text-align:  center;
 }
 
 img {
@@ -36,4 +37,7 @@ li:before {
 
 #aboutVK{
     margin-bottom: 2%;
+}
+div{
+    text-align: center;
 }
