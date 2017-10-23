@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 const expect = require('expect.js');
 const { timer, customBind, sum, anagram, getUnique, getIntersection, isIsomorphic } = require('./tasks');
 
@@ -83,6 +84,7 @@ describe('Lesson 2', () => {
   describe('isIsomorphic', () => {
     it('should check if only one char is different', () => {
       expect(isIsomorphic('help', 'hell')).to.be.ok();
+      expect(isIsomorphic('hellll', 'hell')).not.to.be.ok();
       expect(isIsomorphic('hold', 'hell')).not.to.be.ok();
       expect(isIsomorphic('help', 'hell yeah')).not.to.be.ok();
     });

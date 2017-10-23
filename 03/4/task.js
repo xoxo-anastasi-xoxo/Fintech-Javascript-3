@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 /**
  * Реализовать функцию, поведение которой аналогично поведению Promise.race,
  * которая возвращает в качестве результата промис c первым resolve value или reject value в массиве исходных промисов
@@ -6,7 +7,15 @@
  */
 
 function promiseRace(promises) {
-  return Promise.resolve(null);
+  return new Promise((resolve, reject) => {
+    for (let i = 0; i < promises.length; i++) {
+      promises[i]
+        .then(
+          resolve
+          ,
+          reject);
+    }
+  });
 }
 
 module.exports = promiseRace;
