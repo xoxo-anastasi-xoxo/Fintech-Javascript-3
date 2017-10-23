@@ -1,15 +1,49 @@
 body {
   font-family: 'Roboto', sans-serif;
 }
-.form_name {
+
+.form_item {
+  position: relative;
+  margin: 12px 0;
+  display: block;
   width: 540px;
   height: 66px;
   border-radius: 6px;
   background-color: #eef2f7;
+}
+
+.form_item_input {
+  position: static;
+  flex-grow: 1;
+  max-width: 100%;
+  outline: none;
+  border: none;
   box-sizing: border-box;
   padding: 23px 20px;
-  border: none;
+  width: 100%;
+  border-radius: 6px;
+  background-color: #eef2f7;
   color: #333;
   font-size: 17px;
   line-height: 1.18;
+}
+
+.form_item_label {
+  position: static;
+  top: 22px;
+  left: 20px;
+  color: #74a3c7;
+  font-size: 17px;
+  line-height: 1.18;
+  opacity: 0.6;
+  transition: all 0.2s ease-in-out;
+  transform: translate(0, 0);
+}
+
+.form_item_label:hover {
+  font-size: 10px;
+}
+
+label {
+  cursor: default;
 }
