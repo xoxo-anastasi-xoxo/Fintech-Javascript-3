@@ -2,19 +2,19 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-.container {
-  display: flex;
+.menu_container {
   box-sizing: border-box;
-  border: 3px solid #3e4757;
   width: 1080px;
   height: 65px;
+  padding: 4px 123px 0;
+  border: 3px solid #3e4757;
   background-color: #3e4757;
+  display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 4px 123px 0;
 }
 
-.item {
+.menu_item_content {
   height: 15px;
   list-style-type: none;
   font-size: 13px;
@@ -22,13 +22,17 @@ body {
   color: #fff;
 }
 
-li {
+.active_menu_item {
+  border-bottom: 3px solid #ffdd2d;
+}
+
+.menu_item {
   display: flex;
   align-items: center;
   list-style-type: none;
   height: 100%;
 }
 
-li:active {
+.menu_item:hover {
   border-bottom: 3px solid #ffdd2d;
 }
