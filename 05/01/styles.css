@@ -2,7 +2,13 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-.menu_container {
+.menu__wrapper {
+  width: 1080px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+.menu__container {
   box-sizing: border-box;
   width: 1080px;
   height: 65px;
@@ -14,25 +20,28 @@ body {
   justify-content: space-between;
 }
 
-.menu_item_content {
+.menu__item__content {
   height: 15px;
   list-style-type: none;
   font-size: 13px;
   letter-spacing: 0.9px;
   color: #fff;
+  text-transform: uppercase;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-.active_menu_item {
+.menu__item_active {
   border-bottom: 3px solid #ffdd2d;
 }
 
-.menu_item {
+.menu__item {
   display: flex;
   align-items: center;
   list-style-type: none;
   height: 100%;
 }
 
-.menu_item:hover {
+.menu__item:hover {
   border-bottom: 3px solid #ffdd2d;
 }
