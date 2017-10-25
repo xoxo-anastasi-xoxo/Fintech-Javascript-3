@@ -1,5 +1,7 @@
 body {
   font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .banner__container {
@@ -14,6 +16,9 @@ body {
   margin-left: 50%;
   transform: translateX(-50%);
 }
+
+/* На отрицательные margin норм реакция у всех браузеров)
+  проверено имперически и еще почитано в интернете */
 
 .banner__image {
   height: 550px;

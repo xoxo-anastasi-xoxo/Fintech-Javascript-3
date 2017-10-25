@@ -29,55 +29,5 @@
         <input type="radio" name="answer" value="a3">Большой полосатый мух
     <p><input type="submit"></p>
 </form>
-
-<form class="form">
-    <fieldset class="form__worksheet">
-        <div class="form__item">
-            <input id="form-name" class="form__item-input form__item-input--name" type="text" autocomplete="off" required>
-            <label class="form__item-label" for="form-name">ФИО</label>
-        </div>
-        <div class="form__item">
-            <input id="form-locality" class="form__item-input form__item-input--locality" type="text" autocomplete="off" required>
-            <label class="form__item-label" for="form-locality">Город проживания</label>
-            <div class="form__warner"></div>
-            <div class="form__error">Для заполнения этого поля не допустимо использовать буквы латинского алфавита</div>
-        </div>
-        <div class="form__item">
-            <input id="form-tel" class="form__item-input" type="tel" autocomplete="off" required>
-            <label class="form__item-label" for="form-tel">Мобильный телефон</label>
-        </div>
-        <div class="form__item">
-            <input id="form-email" class="form__item-input form__item-input--email" type="text" autocomplete="off" required>
-            <label class="form__item-label" for="form-email">Электронная почта</label>
-            <div class="form__helper">
-                <p class="form__helper-text">
-                    Ваши данные замаскированы в целях безопасности. Для изменения информации с вами свяжется оператор колл-центра.
-                </p>
-            </div>
-        </div>
-    </fieldset>
-
-    <fieldset class="form__fieldset">
-        <legend class="selector-header">Выберите это или другое</legend>
-
-        <div class="selector">
-            <div class="selector__item">
-                <label class="selector__label" for="this">Это
-                    <input type="radio" id="this" class="selector__radio" name="selector" checked>
-                    <span class="selector__checked"></span>
-                </label>
-            </div>
-            <div class="selector__item">
-                <label class="selector__label" for="other">Другое
-                    <input type="radio" id="other" class="selector__radio" name="selector">
-                    <span class="selector__checked"></span>
-                </label>
-            </div>
-        </div>
-    </fieldset>
-
-    <button class="primary-button primary-button--form" type="submit">Отправить</button>
-</form>
-
 </body>
 </html>
