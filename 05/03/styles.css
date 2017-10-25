@@ -1,27 +1,26 @@
 body {
   font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
+
+/* Отступления от макета:
+    более логичные размеры отступов внутри тегов
+    уровнены текст тега и крестик
+    текст в теге чуть выше чем на макете, т е прям по центру */
 
 .tag__container {
   box-sizing: border-box;
-  display: flex;
-  justify-content: flex-start;
-  flex-flow: row wrap;
-  align-content: flex-start;
   width: 829px;
-  height: 132px;
   border-radius: 6px;
   border: solid 1px #dddfe0;
   padding: 12px;
   margin-left: 50%;
   transform: translateX(-50%);
+  font-size: 13px;
 }
 
 .tag {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
   overflow: hidden;
   height: 42px;
   border-radius: 6px;
@@ -30,35 +29,24 @@ body {
   max-width: 300px;
   padding: 13px 11px;
   margin: 6px;
-  position: relative;
+  display: inline-flex;
 }
 
 .tag__first-item {
-  padding: 12px 0;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  font-size: 13px;
   color: #333;
   padding-right: 13px;
   text-align: left;
+  float: left;
+  margin: 0;
 }
 
 .tag__second-item {
   width: 11px;
   height: 11px;
   object-fit: contain;
-}
-
-.tag-text {
-  height: 42px;
-  box-sizing: border-box;
-  padding: 13px 11px;
-  margin: 6px;
-  flex-grow: 1;
-  max-width: 100%;
-  outline: none;
-  border: none;
-  font-size: 22px;
-  line-height: 1;
+  float: right;
+  padding-top: 3px;
 }

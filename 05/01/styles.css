@@ -1,5 +1,11 @@
+/* Прочитала, что такое сглаживание и вынесла его сюда,
+потому что мне показалось,
+что для любого текста на страничке его логично применить */
+
 body {
   font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .menu__wrapper {
@@ -27,8 +33,6 @@ body {
   letter-spacing: 0.9px;
   color: #fff;
   text-transform: uppercase;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 .menu__item_active {
