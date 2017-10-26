@@ -54,7 +54,6 @@ body {
   transition: 0.2s ease all;
 }
 
-/* active state */
 .form__item__input:focus ~ .form__item__label,
 .form__item__input:valid ~ .form__item__label {
   top: 4px;
@@ -68,12 +67,34 @@ body {
   visibility: hidden;
 }
 
-.form__item__input:invalid ~ .form__error {
-  visibility: visible;
+.form__item__help {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  left: 499px;
+  top: 21px;
 }
 
-.form__item__help {
-  float: right;
+.form__item__help-text {
+  visibility: hidden;
+  box-sizing: border-box;
+  width: 284px;
+  height: 104px;
+  border-radius: 6px;
+  background-color: #fff;
+  border: solid 1px #dddfe0;
+  font-size: 13px;
+  line-height: 1.38;
+  color: #9299a2;
+  position: absolute;
+  left: 202px;
+  top: -32px;
+  padding: 16px;
+}
+
+.form__item__help:hover ~ .form__item__help-text {
+  visibility: visible;
 }
 
 .form__selector {

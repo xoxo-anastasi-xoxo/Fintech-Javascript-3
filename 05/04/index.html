@@ -27,10 +27,15 @@
     <div class="form__item">
         <input class="form__item__input" type="text" pattern="^[А-Яа-яЁё\s]+$" required>
         <label class="form__item__label">Город проживания</label>
-        <div class="form__error">Для заполнения этого поля не допустимо использовать буквы латинского алфавита</div>
+        <!--<div id="alert" class="form-alert catch"></div>-->
+        <!--<div class="form__error">Для заполнения этого поля не допустимо использовать буквы латинского алфавита</div>-->
         </div>
 
-        <div class="form__item">
+    <div id="alert-desc" class="form-alert-desc">
+        <span>Для заполнения этого поля не допустимо использовать буквы латинского алфавита</span>
+    </div>
+
+    <div class="form__item">
             <input class="form__item__input" type="tel" required>
             <label class="form__item__label">Мобильный телефон</label>
         </div>
@@ -39,9 +44,9 @@
             <input class="form__item__input" type="text" required>
             <label class="form__item__label">Электронная почта</label>
             <img src="stroke-1-fill-2-copy-2@2x.png" class="form__item__help" alt="help">
-            <!--<p class="form__helper-text">-->
-            <!--Ваши данные замаскированы в целях безопасности. Для изменения информации с вами свяжется оператор колл-центра.-->
-            <!--</p>-->
+            <p class="form__item__help-text">
+            Ваши данные замаскированы в целях безопасности. Для изменения информации с вами свяжется оператор колл-центра.
+            </p>
         </div>
 
         <fieldset class="form__item">
