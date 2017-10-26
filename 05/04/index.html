@@ -2,17 +2,73 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Задание 5.4</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&amp;subset=cyrillic" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <!--<title>Задание 5.4</title>-->
+    <title>Форма</title>
 </head>
 <body>
-<h1>Сверстать форму. Pixel-perfect. Select делать не нужно</h1>
-<p>
-    Подробности по ссылке:
-    <a href="https://app.zeplin.io/project/58a307271a9f6d513890adc8/screen/58a3075a4ec334e848d7f333">
-        https://app.zeplin.io/project/58a307271a9f6d513890adc8/screen/58a3075a4ec334e848d7f333
-    </a>, для того чтобы получить доступ, нужно зарегестрироваться на
-    <a href="https://zeplin.io/">zeplin.io</a>, и попросить доступ у Евгения Мамаева.
-</p>
-<img src="./task.png" alt="">
+<!--<h1>Сверстать форму. Pixel-perfect. Select делать не нужно</h1>-->
+<!--<p>-->
+<!--Подробности по ссылке:-->
+<!--<a href="https://app.zeplin.io/project/58a307271a9f6d513890adc8/screen/58a3075a4ec334e848d7f333">-->
+<!--https://app.zeplin.io/project/58a307271a9f6d513890adc8/screen/58a3075a4ec334e848d7f333-->
+<!--</a>, для того чтобы получить доступ, нужно зарегестрироваться на-->
+<!--<a href="https://zeplin.io/">zeplin.io</a>, и попросить доступ у Евгения Мамаева.-->
+<!--</p>-->
+<!--<img src="./task.png" alt="">-->
+<form class="form">
+
+    <div class="form__item">
+        <input class="form__item__input" type="text" required>
+        <label class="form__item__label">ФИО</label>
+    </div>
+
+    <div class="form__item">
+        <input class="form__item__input" type="text" pattern="^[А-Яа-яЁё\s]+$" required>
+        <label class="form__item__label">Город проживания</label>
+        <!--<div id="alert" class="form-alert catch"></div>-->
+        <!--<div class="form__error">Для заполнения этого поля не допустимо использовать буквы латинского алфавита</div>-->
+        </div>
+
+    <!--<div id="alert-desc" class="form-alert-desc">-->
+        <!--<span>Для заполнения этого поля не допустимо использовать буквы латинского алфавита</span>-->
+    <!--</div>-->
+
+    <div class="form__item">
+            <input class="form__item__input" type="tel" required>
+            <label class="form__item__label">Мобильный телефон</label>
+        </div>
+
+        <div class="form__item">
+            <input class="form__item__input" type="text" required>
+            <label class="form__item__label">Электронная почта</label>
+            <img src="stroke-1-fill-2-copy-2@2x.png" class="form__item__help" alt="help">
+            <p class="form__item__help-text">
+            Ваши данные замаскированы в целях безопасности. Для изменения информации с вами свяжется оператор колл-центра.
+            </p>
+        </div>
+
+        <fieldset class="form__item">
+            <legend class="form__selector-header">Выберите это или другое</legend>
+            <div  class="form__selector">
+            <label class="form__radio-button" >
+                <input type="radio"
+                       class="native"
+                       name="radio" checked>
+                <span class="text">Это</span>
+                <span class="mark"></span>
+            </label>
+            <label class="form__radio-button">
+                <input type="radio"
+                       class="native"
+                       name="radio">
+                <span class="text">Другое</span>
+                <span class="mark"></span>
+            </label>
+            </div>
+        </fieldset>
+    <button class="form__button" type="submit">Отправить</button>
+</form>
 </body>
 </html>

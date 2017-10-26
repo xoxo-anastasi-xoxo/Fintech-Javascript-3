@@ -1,0 +1,67 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Отступления от макета:
+    более логичные размеры отступов внутри тегов
+    уровнены текст тега и крестик
+    текст в теге чуть выше чем на макете, т е прям по центру */
+
+.tag__container {
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  width: 829px;
+  height: 132px;
+  border-radius: 6px;
+  border: solid 1px #dddfe0;
+  padding: 12px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  font-size: 13px;
+}
+
+.tag__container > * {
+  height: 42px;
+  border-radius: 6px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  margin: 6px;
+}
+
+.tag {
+  overflow: hidden;
+  padding: 13px 11px;
+  background-color: #eef2f7;
+  box-sizing: border-box;
+  max-width: 300px;
+  display: inline-flex;
+}
+
+.tag__first-item {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: #333;
+  padding-right: 13px;
+  text-align: left;
+  float: left;
+  margin: 0;
+}
+
+.tag__input {
+  outline: none;
+  border: none;
+  flex-grow: 1;
+}
+
+.tag__second-item {
+  width: 11px;
+  height: 11px;
+  object-fit: contain;
+  float: right;
+  padding-top: 3px;
+}
