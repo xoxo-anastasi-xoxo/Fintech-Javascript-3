@@ -11,7 +11,10 @@ body {
 
 .tag__container {
   box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
   width: 829px;
+  height: 132px;
   border-radius: 6px;
   border: solid 1px #dddfe0;
   padding: 12px;
@@ -20,19 +23,23 @@ body {
   font-size: 13px;
 }
 
-.tag {
-  overflow: hidden;
+.tag__container > * {
   height: 42px;
   border-radius: 6px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  margin: 6px;
+}
+
+.tag {
+  overflow: hidden;
+  padding: 13px 11px;
   background-color: #eef2f7;
   box-sizing: border-box;
   max-width: 300px;
-  padding: 13px 11px;
-  margin: 6px;
   display: inline-flex;
 }
-
-/* Именно так сделать переполнение говорилось на уроке */
 
 .tag__first-item {
   overflow: hidden;
@@ -43,6 +50,12 @@ body {
   text-align: left;
   float: left;
   margin: 0;
+}
+
+.tag__input {
+  outline: none;
+  border: none;
+  flex-grow: 1;
 }
 
 .tag__second-item {
