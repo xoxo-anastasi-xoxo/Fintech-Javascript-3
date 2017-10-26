@@ -32,6 +32,8 @@ body {
   display: inline-flex;
 }
 
+/* Именно так сделать переполнение говорилось на уроке */
+
 .tag__first-item {
   overflow: hidden;
   white-space: nowrap;
