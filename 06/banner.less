@@ -1,0 +1,140 @@
+@main_color: #ffdd2d;
+
+.banner {
+  z-index: 0;
+  width: 100%;
+  background-image: linear-gradient(to right, #1489e7, #003e82);
+  height: 413px;
+  overflow: hidden;
+
+  &__image {
+    margin: 0 auto;
+    box-sizing: content-box;
+    width: 1080px;
+    height: 413px;
+    background-image: url('img/cards.png');
+    background-repeat: no-repeat;
+    background-position: 0 50%;
+  }
+
+  &__wrapper {
+    margin: 0 auto;
+    overflow: visible;
+    box-sizing: content-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1080px;
+    height: 413px;
+  }
+
+  &__inner-wrapper {
+    display: flex;
+    width: 524px;
+    height: 413px;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin: auto 0 auto auto;
+  }
+
+  &__heading {
+    margin: 0;
+    width: 342px;
+    height: 100px;
+    font-size: 50px;
+    font-weight: 100;
+    line-height: 1;
+    color: #fff;
+  }
+
+  &__text {
+    width: 300px;
+    height: 48px;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #fff;
+    margin: 16px 0 20px;
+  }
+
+  &__button {
+    width: 212px;
+    height: 62px;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    border-radius: 6px;
+    background-color: #ffdd2d;
+    font-size: 17px;
+    line-height: 1.41;
+    text-align: center;
+    color: #333;
+    padding: 3px 0 0;
+    margin-bottom: 74px;
+    border: none;
+
+    &:hover {
+      -webkit-transition: background-color 0.5s ease;
+      -moz-transition: background-color 0.5s ease;
+      -ms-transition: background-color 0.5s ease;
+      -o-transition: background-color 0.5s ease;
+      transition: background-color 0.5s ease;
+      background-color: #ffcd33;
+    }
+  }
+}
+
+@media (max-width: 1080px) {
+  .banner {
+    height: 390px;
+
+    &__image {
+      height: 390px;
+      background-size: 390px;
+      background-position: 50% 500%;
+      width: 100%;
+    }
+
+    &__wrapper {
+      width: 100%;
+      height: 390px;
+    }
+
+    &__inner-wrapper {
+      width: 324px;
+      height: 390px;
+      justify-content: inherit;
+      margin: 0 auto;
+    }
+
+    &__heading {
+      //margin-top: 26px;
+      width: 239px;
+      height: 72px;
+      font-size: 30px;
+      font-weight: 100;
+      line-height: 1.2;
+      text-align: center;
+      color: #fff;
+      margin: 20px auto 0;
+    }
+
+    &__text {
+      width: 324px;
+      height: 48px;
+      font-size: 17px;
+      line-height: 1.41;
+      text-align: center;
+      color: #fff;
+      margin: 0 auto;
+    }
+
+    &__button {
+      width: 252px;
+      height: 66px;
+      border-radius: 6px;
+      background-color: @main_color;
+      font-size: 17px;
+      line-height: 1.41;
+      margin: auto auto 30px;
+    }
+  }
+}
