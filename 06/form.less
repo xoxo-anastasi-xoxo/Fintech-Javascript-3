@@ -18,7 +18,7 @@
   &__item {
     z-index: 0;
     box-sizing: border-box;
-    width: 540px;
+    width: 100%;
     height: auto;
     position: relative;
     padding: 0;
@@ -212,7 +212,6 @@
   }
 
   &__selector-header {
-    z-index: 0;
     margin: 30px 0 13px;
     color: #333;
     text-align: center;
@@ -222,6 +221,7 @@
   }
 
   &__button {
+    cursor: pointer;
     font-family: 'Roboto', sans-seri;
     box-sizing: border-box;
     border-radius: 6px;
@@ -232,8 +232,9 @@
     color: #333;
     padding: 3px 0 0;
     border: none;
-    margin-left: 50%;
-    transform: translateX(-50%);
+    //margin-top: 0;
+    //margin-left: 5%;
+    margin: 0 ~"calc(50% - 129px)";
     width: 258px;
     height: 66px;
 
@@ -261,7 +262,7 @@
 
     &__item {
       margin: 12px auto;
-      width: 288px;
+      width: 100%;
       height: 66px;
 
       &__error {
@@ -271,8 +272,8 @@
         &-text {
           display: none;
           white-space: inherit;
-          width: 523px;
-          height: 15px;
+          width: 284px;
+          height: 30px;
           margin-bottom: 20px;
         }
 
