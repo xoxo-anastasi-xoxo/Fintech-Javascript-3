@@ -1,0 +1,351 @@
+@main_color: #ffdd2d;
+
+.form-header {
+  width: 540px;
+  height: 120px;
+  font-size: 50px;
+  font-weight: 300;
+  line-height: 1.08;
+  text-align: center;
+  color: #333;
+  margin: 76px auto 37px;
+}
+
+.form {
+  width: 540px;
+  margin: 0 auto;
+
+  &__item {
+    z-index: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding: 0;
+    margin: 24px 0;
+    border: none;
+    display: inline-block;
+
+    &__error {
+      position: absolute;
+      width: 0;
+      height: 0;
+      object-fit: contain;
+      left: 499px;
+      top: 21px;
+      visibility: hidden;
+
+      &-text {
+        visibility: hidden;
+        width: 0;
+        height: 0;
+        font-size: 13px;
+        color: #d0021b;
+        position: absolute;
+        left: 7px;
+        top: 62px;
+        overflow: hidden;
+        white-space: nowrap;
+      }
+    }
+
+    &__input {
+      box-sizing: border-box;
+      width: 100%;
+      height: 66px;
+      float: left;
+      border-radius: 6px;
+      background-color: #eef2f7;
+      font-size: 18px;
+      padding: 10px 10px 10px 5px;
+      display: block;
+      border: none;
+
+      &:focus {
+        background-color: #fff;
+        border-radius: 6px;
+        border: solid 1px #1489e7;
+      }
+    }
+
+    &__label {
+      height: 20px;
+      opacity: 0.6;
+      float: left;
+      font-size: 17px;
+      text-align: center;
+      color: #74a3c7;
+      position: absolute;
+      pointer-events: none;
+      left: 18px;
+      top: 23px;
+      transition: 0.2s ease all;
+    }
+
+    &__input:focus ~ &__label,
+    &__input:valid ~ &__label {
+      top: 5px;
+      transition-property: top;
+      transition-duration: 0.5s;
+      opacity: 0.6;
+      font-size: 13px;
+      text-align: center;
+      color: #74a3c7;
+    }
+
+    &__input:focus ~ &__error {
+      transition-property: width, height;
+      transition-duration: 1s;
+      visibility: visible;
+      width: 24px;
+      height: 24px;
+    }
+
+    &__input:focus ~ &__error-text {
+      transition-property: width;
+      transition-duration: 1s;
+      visibility: visible;
+      width: 523px;
+      height: 15px;
+    }
+
+    &__help {
+      position: absolute;
+      width: 24px;
+      height: 24px;
+      object-fit: contain;
+      left: 499px;
+      top: 21px;
+
+      &-text {
+        z-index: 100;
+        visibility: hidden;
+        box-sizing: border-box;
+        width: 284px;
+        height: 104px;
+        border-radius: 6px;
+        background-color: #fff;
+        border: solid 1px #dddfe0;
+        font-size: 13px;
+        line-height: 1.38;
+        color: #9299a2;
+        position: absolute;
+        left: 202px;
+        top: -32px;
+        padding: 16px;
+      }
+
+      &:hover ~ &-text {
+        visibility: visible;
+        animation-name: tooltip_animation;
+        animation-duration: 1.2s;
+        animation-timing-function: ease-out;
+      }
+    }
+  }
+
+  &__selector {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0;
+    margin-bottom: 7px;
+
+    &-header {
+      margin-bottom: 13px;
+      color: #333;
+      text-align: center;
+      font-weight: 300;
+      font-size: 21px;
+      line-height: 1.15;
+      margin-top: 0;
+    }
+  }
+
+  &__radio-button {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 6px;
+    border: solid 1px #dddfe0;
+    width: 258px;
+    height: 66px;
+    padding: 10px 20px;
+    margin: 14px 24px 20px 0;
+    cursor: pointer;
+
+    &__text {
+      opacity: 0.6;
+      font-size: 17px;
+      color: #74a3c7;
+    }
+
+    &__native {
+      position: absolute;
+      visibility: hidden;
+    }
+
+    &__mark {
+      position: relative;
+      width: 30px;
+      height: 30px;
+      background-color: #eef2f7;
+      border-radius: 50%;
+    }
+
+    &__native:checked ~ &__text {
+      color: #333;
+      opacity: 1;
+    }
+
+    &__native:checked ~ &__mark {
+      background-color: #ffdd2d;
+    }
+
+    &__native ~ &__mark::before {
+      background-color: #3e4757;
+      width: 12px;
+      height: 12px;
+      position: absolute;
+      content: '';
+      z-index: 1;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%) scale(0);
+      border-radius: 50%;
+    }
+
+    &__native:checked ~ &__mark::before {
+      transform: translate(-50%, -50%) scale(1);
+    }
+  }
+
+  &__button {
+    cursor: pointer;
+    font-family: 'Roboto', sans-seri;
+    box-sizing: border-box;
+    border-radius: 6px;
+    background-color: @main_color;
+    font-size: 17px;
+    line-height: 1.41;
+    text-align: center;
+    color: #333;
+    padding: 3px 0 0;
+    border: none;
+    margin: 0 ~"calc(50% - 129px)";
+    width: 258px;
+    height: 66px;
+
+    &:hover {
+      -webkit-transition: background-color 0.5s ease;
+      -moz-transition: background-color 0.5s ease;
+      -ms-transition: background-color 0.5s ease;
+      -o-transition: background-color 0.5s ease;
+      transition: background-color 0.5s ease;
+      background-color: #ffcd33;
+    }
+  }
+}
+
+@media (max-width: 640px) {
+  .form-header {
+    width: 288px;
+    height: 56px;
+    font-size: 24px;
+    margin: 52px auto 26px;
+  }
+
+  .form {
+    width: 288px;
+
+    &__item {
+      margin: 12px auto;
+      width: 100%;
+      height: 66px;
+
+      &__error {
+        left: 253px;
+        top: 21px;
+
+        &-text {
+          display: none;
+          position: static;
+          white-space: inherit;
+          width: 284px;
+          height: 30px;
+          margin-bottom: 20px;
+        }
+
+        &:hover ~ &-text {
+          display: inherit;
+          visibility: visible;
+          animation-name: none;
+        }
+      }
+
+      &__input:focus ~ &__error {
+        transition-property: width, height;
+        transition-duration: 1s;
+        visibility: visible;
+        width: 24px;
+        height: 24px;
+      }
+
+      &__help {
+        left: 253px;
+        top: 21px;
+
+        &-text {
+          display: none;
+          width: 284px;
+          height: 104px;
+          font-size: 13px;
+          line-height: 1.38;
+          margin-top: 50px;
+          transform: translateX(-200px);
+          margin-bottom: 20px;
+          padding: 16px;
+        }
+
+        &:hover ~ &-text {
+          position: relative;
+          display: inherit;
+          visibility: visible;
+          animation-name: none;
+        }
+      }
+
+      &__input:focus ~ &__error-text {
+        transition-property: width;
+        transition-duration: 1s;
+        visibility: visible;
+        width: 288px;
+        height: 30px;
+      }
+    }
+
+    &__radio-button {
+      margin: 12px auto;
+    }
+
+    &__selector {
+      flex-direction: column;
+    }
+
+    &__button {
+      position: static;
+      margin-top: 147px;
+    }
+  }
+}
+
+@keyframes tooltip_animation {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
