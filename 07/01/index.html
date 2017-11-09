@@ -4,23 +4,45 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <link rel="stylesheet/less" type="text/css" href="./main.less" />
     <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.7.2/less.min.js" ></script>
-    <script src="./main.js" ></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400&amp;subset=cyrillic" rel="stylesheet">
+    <!--<script src="./main.js" ></script>-->
+    <!--<script type = "text/javascript">-->
+      <!--window.addEventListener ("load", function () {-->
+        <!--let input = document.getElementsByTagName ("input");-->
+
+        <!--formInput.addEventListener ("keydown", function () {-->
+          <!--alert ("Caret position: " + this.selectionStart);-->
+
+          <!--// You can also set the caret: this.selectionStart = 2;-->
+        <!--});-->
+      <!--});-->
+    <!--</script>-->
     <title>Задание 7.1</title>
 </head>
 <body>
-<h1>Маска для поля с телефоном.</h1>
-<p>
-    Написать input c маской для ввода телефона. Шаблон маски:
-    <br>
-    <code>+ 7 (_ _ _) - _ _ _ - _ _ - _ _</code>.
-    <br>
-    <input value="+7(988)-777-55-33">
-    <br>
-    Сделать обновление адреса и названия ссылки для звонка при изменении телефона в инпуте:
-    <br>
-    <a href="tel:+79887775533">Позвонить на +7(988)-777-55-33</a>
-    <br>
-    Отстилить интерфейс по своему усмотрению.
-</p>
+<!--<h1>Маска для поля с телефоном.</h1>-->
+<!--<p>-->
+    <!--Написать input c маской для ввода телефона. Шаблон маски:-->
+    <!--<br>-->
+    <!--<code>+ 7 (_ _ _) - _ _ _ - _ _ - _ _</code>.-->
+    <!--<br>-->
+    <!--<input value="+7(988)-777-55-33">-->
+    <!--<br>-->
+    <!--Сделать обновление адреса и названия ссылки для звонка при изменении телефона в инпуте:-->
+    <!--<br>-->
+    <!--<a href="tel:+79887775533">Позвонить на +7(988)-777-55-33</a>-->
+    <!--<br>-->
+    <!--Отстилить интерфейс по своему усмотрению.-->
+<!--</p>-->
+<div class="wrapper">
+    <form class="form">
+        <div class="form__item">
+            <input class="form__item__input" maxlength=17 type="tel"  required>
+            <label class="form__item__label">Мобильный телефон</label>
+        </div>
+        <a class="form__item form__item__submit" href="tel:+79887775533">Позвонить на +7(988)-777-55-33</a>
+    </form>
+</div>
+<script src="./main.js" ></script>
 </body>
 </html>
